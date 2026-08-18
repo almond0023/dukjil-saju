@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-adsense-account" content="ca-pub-8276164907126629">
+<title>덕질사주 · 내 사주랑 찰떡 궁합 최애 찾기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Press+Start+2P&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T3HZHQJRWX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-T3HZHQJRWX');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8276164907126629" crossorigin="anonymous"></script>
+<style>
+  :root{
+    --lilac:#c9b6f5;
+    --periwinkle:#8fa6f5;
+    --skyblush:#bcd4ff;
+    --hotpink:#ff2e9a;
+    --bubblepink:#ffb6e1;
+    --lime:#d4ff3d;
+    --gold:#ffd24c;
+    --cyan:#7af5e0;
+    --ink:#1d1440;
+    --ink-soft:#4a3f74;
+    --cream:#fffcf5;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth; font-size:17px;}
+
+  body{
+    font-family:'Noto Sans KR', sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(circle at 15% 10%, rgba(255,255,255,.5), transparent 40%),
+      linear-gradient(150deg, var(--lilac) 0%, var(--periwinkle) 55%, var(--skyblush) 100%);
+    background-attachment:fixed;
+    overflow-x:hidden;
+    position:relative;
+  }
+  body::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:1;
+    background:repeating-linear-gradient(180deg, rgba(255,255,255,.05) 0px, rgba(255,255,255,.05) 1px, transparent 1px, transparent 3px);
+    mix-blend-mode:overlay; opacity:.5;
+  }
+
+  .font-display{ font-family:'Jua', sans-serif; }
+  .font-pixel{ font-family:'Press Start 2P', monospace; }
+
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; display:block; }
+
+  .chrome-text{
+    color:#fff;
+    background:linear-gradient(180deg,#ffffff 0%, #e7e9f7 35%, #c2c6e6 55%, #ffffff 70%, #b9bde0 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    text-shadow:0 1px 0 #fff, 0 2px 0 #dcdcf2, 0 8px 18px rgba(29,20,64,.35);
+    letter-spacing:1px;
+  }
+
+  .holo-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:13px; padding:11px 22px; border-radius:999px;
+    color:var(--ink); border:2px solid #fff;
+    background:linear-gradient(100deg,#ffe3fb,#e3f4ff 25%,#e6ffe9 50%,#fff6d9 75%,#ffe3fb 100%);
+    background-size:300% 300%; animation:holo-shift 5s ease infinite;
+    box-shadow:0 6px 16px rgba(29,20,64,.25);
+  }
+  @keyframes holo-shift{ 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
+  .holo-badge .spark{ animation:spin-slow 3.5s linear infinite; display:inline-block; }
+  @keyframes spin-slow{ from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+
+  .float-deco{ position:absolute; pointer-events:none; filter:drop-shadow(0 8px 12px rgba(29,20,64,.28)); animation:floaty 7s ease-in-out infinite; }
+  @keyframes floaty{ 0%,100%{transform:translateY(0) rotate(0deg);} 50%{transform:translateY(-18px) rotate(8deg);} }
+  @media (prefers-reduced-motion: reduce){ .float-deco, .holo-badge{ animation:none !important; } }
+
+  .pxheart{ width:30px; height:28px; background:linear-gradient(160deg,#ffffff, #ffcbe9 45%, var(--hotpink) 100%); clip-path: polygon(15% 0%, 35% 0%, 50% 15%, 65% 0%, 85% 0%, 100% 20%, 100% 45%, 50% 100%, 0% 45%, 0% 20%); }
+  .pxstar{ width:28px; height:28px; background:linear-gradient(160deg,#fff8dd, var(--gold) 60%, #ffb400); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  .pxcube{ width:26px; height:26px; background:linear-gradient(150deg,#eaf0ff, var(--periwinkle) 60%, #5f78e0); transform:rotate(12deg); border-radius:8px; }
+  .pxdrop{ width:24px; height:28px; background:linear-gradient(160deg,#e3fffb, var(--cyan) 60%, #21b8a0); border-radius:50% 50% 50% 0; transform:rotate(45deg); }
+
+  .bubble{ border-radius:28px; position:relative; box-shadow:0 14px 0 -4px rgba(29,20,64,.10), 0 18px 34px rgba(29,20,64,.22); }
+  .bubble::before{ content:""; position:absolute; top:0; left:8%; right:8%; height:38%; background:linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,0)); border-radius:999px 999px 60px 60px; pointer-events:none; }
+
+  .nav{ position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; padding:16px clamp(18px,5vw,56px); background:rgba(255,252,245,.6); backdrop-filter: blur(10px); border-bottom:2px solid rgba(255,255,255,.6); }
+  .logo{ display:flex; align-items:center; gap:8px; font-size:22px; color:var(--ink); }
+  .logo .badge{ font-size:10px; padding:5px 9px; border-radius:999px; background:var(--ink); color:var(--lime); letter-spacing:0; }
+  .nav-cta{ font-size:13.5px; padding:11px 20px; border-radius:999px; background:linear-gradient(160deg,#2c2154,var(--ink)); color:#fff; box-shadow:0 6px 14px rgba(29,20,64,.35); }
+
+  section{ padding:0 clamp(18px,5vw,56px); position:relative; z-index:2; }
+
+  .hero{ position:relative; min-height:92vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding-top:60px; padding-bottom:40px; overflow:hidden; }
+  .hero h1{ font-size:clamp(42px, 8vw, 94px); line-height:1.05; margin:26px 0 20px; }
+  .hero p.sub{ font-size:clamp(16.5px,2.3vw,20.5px); color:var(--ink-soft); max-width:600px; margin:0 auto 34px; font-weight:500; line-height:1.65; }
+  .hero-cta{ display:inline-flex; align-items:center; gap:10px; background:linear-gradient(160deg,#ff6cc0,var(--hotpink)); color:#fff; font-family:'Jua',sans-serif; font-size:19.5px; padding:17px 34px; border-radius:999px; box-shadow:0 10px 0 -3px rgba(179,0,90,.4), 0 16px 28px rgba(255,46,154,.4); transition:transform .15s ease; }
+  .hero-cta:hover{ transform:translateY(-3px); }
+  .hero-cta:active{ transform:translateY(1px); }
+
+  .scroll-cue{ margin-top:56px; font-size:11px; color:var(--ink-soft); display:flex; flex-direction:column; align-items:center; gap:8px; }
+  .scroll-cue .arrow{ width:12px; height:12px; border-right:3px solid var(--ink-soft); border-bottom:3px solid var(--ink-soft); transform:rotate(45deg); animation:bob 1.4s infinite; }
+  @keyframes bob{ 0%,100%{transform:translateY(0) rotate(45deg);} 50%{transform:translateY(6px) rotate(45deg);} }
+
+  .device-wrap{ max-width:980px; margin:0 auto 120px; display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:center; }
+  @media (max-width:820px){ .device-wrap{ grid-template-columns:1fr; } }
+
+  .device-copy .kicker{ font-size:12.5px; color:var(--hotpink); background:#fff; display:inline-block; padding:7px 14px; border-radius:999px; margin-bottom:16px; box-shadow:0 4px 10px rgba(29,20,64,.15); }
+  .device-copy h2{ font-family:'Jua',sans-serif; font-size:clamp(27px,3.6vw,37px); margin-bottom:14px; line-height:1.3; }
+  .device-copy p{ color:var(--ink-soft); font-size:16px; line-height:1.7; margin-bottom:10px; }
+
+  .console{ background:linear-gradient(160deg,#ffe1f4, #ff9fd6 45%, #ff5cb8); padding:26px; border-radius:36px; position:relative; box-shadow:0 16px 0 -6px rgba(150,10,90,.25), 0 24px 40px rgba(29,20,64,.28); }
+  .console::after{ content:""; position:absolute; top:14px; left:16%; right:16%; height:14px; background:linear-gradient(180deg, rgba(255,255,255,.75), rgba(255,255,255,0)); border-radius:999px; pointer-events:none; }
+  .console-screen{ background:#241a3d; padding:20px; margin-bottom:18px; border-radius:24px; }
+  .console-screen-label{ font-family:'Press Start 2P',monospace; color:var(--lime); font-size:10px; margin-bottom:14px; display:flex; justify-content:space-between; }
+  .console-screen-label span:last-child{ color:var(--bubblepink); }
+
+  .field{ margin-bottom:14px; }
+  .field label{ display:block; font-size:12px; color:#c9c2ff; margin-bottom:6px; font-family:'Press Start 2P',monospace; letter-spacing:0; }
+  .field input, .field select{ width:100%; padding:12px 14px; background:#3a2c63; border:2px solid #6b58a8; border-radius:16px; color:#fff; font-family:'Noto Sans KR',sans-serif; font-size:15.5px; }
+  .field input::-webkit-calendar-picker-indicator{ filter:invert(1); }
+  .field-row{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+
+  .segment-control{ display:flex; background:#2e2354; border-radius:14px; padding:5px; gap:5px; }
+  .segment-btn{ flex:1; padding:11px 6px; border:none; border-radius:10px; background:transparent; color:#c9c2ff; font-family:'Noto Sans KR',sans-serif; font-size:12.5px; font-weight:700; cursor:pointer; transition:all .15s ease; }
+  .segment-btn.active{ background:linear-gradient(160deg,#ff6cc0,var(--hotpink)); color:#fff; box-shadow:0 4px 10px rgba(255,46,154,.45); }
+  .segment-btn:not(.active):hover{ background:rgba(255,255,255,.08); }
+
+  .console-buttons{ display:flex; align-items:center; justify-content:space-between; gap:14px; }
+  .dpad{ width:56px; height:56px; position:relative; background:var(--ink); border-radius:20px; box-shadow:0 6px 0 -1px rgba(0,0,0,.3); flex-shrink:0; }
+  .submit-btn{ flex:1; font-family:'Jua',sans-serif; font-size:17.5px; padding:16px; background:linear-gradient(160deg,#2c2154,var(--ink)); color:var(--lime); border:none; border-radius:999px; cursor:pointer; box-shadow:0 8px 0 -2px rgba(0,0,0,.35); transition:transform .12s ease; }
+  .submit-btn:hover{ transform:translateY(-2px); }
+  .submit-btn:active{ transform:translateY(1px); }
+  .helper-note{ font-size:12.5px; color:#fff; opacity:.85; margin-top:12px; text-align:center; }
+
+  #result{ display:none; }
+  #result.show{ display:block; animation:fadein .5s ease; }
+  @keyframes fadein{ from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);} }
+
+  .section-head{ text-align:center; max-width:660px; margin:0 auto 40px; }
+  .section-head .kicker{ font-size:12.5px; color:var(--ink); background:var(--lime); display:inline-block; padding:7px 14px; border-radius:999px; margin-bottom:14px; }
+  .section-head h2{ font-family:'Jua',sans-serif; font-size:clamp(25px,3.4vw,35px); margin-bottom:10px; }
+  .section-head p{ color:var(--ink-soft); font-size:15.5px; line-height:1.6; }
+
+  .profile-card{ max-width:740px; margin:0 auto 30px; background:var(--cream); padding:clamp(26px,4vw,44px); text-align:center; }
+  .profile-icon{ width:130px; height:130px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; position:relative; box-shadow:0 10px 22px rgba(29,20,64,.25); }
+  .profile-icon::after{ content:""; position:absolute; top:10%; left:18%; width:34%; height:24%; background:rgba(255,255,255,.55); border-radius:50%; filter:blur(2px); }
+  .profile-ilju{ font-family:'Press Start 2P',monospace; font-size:10.5px; color:var(--ink-soft); background:#f3edff; display:inline-block; padding:7px 14px; border-radius:999px; margin-bottom:16px; }
+  .profile-body h3{ font-family:'Jua',sans-serif; font-size:26px; margin-bottom:16px; line-height:1.4; }
+  .profile-body h3 .accent{ color:var(--hotpink); }
+  .profile-body p{ color:var(--ink-soft); font-size:16px; line-height:1.85; margin:0 auto 14px; max-width:580px; text-align:left; }
+  .keyword-list{ display:flex; flex-wrap:wrap; gap:9px; justify-content:center; margin:20px 0 6px; }
+  .keyword-list span{ font-size:13.5px; font-weight:700; padding:8px 15px; border-radius:999px; color:var(--ink); box-shadow:0 4px 10px rgba(29,20,64,.16); border:2px solid rgba(255,255,255,.7); }
+
+  .insight-title{ font-family:'Jua',sans-serif; font-size:17.5px; margin:26px 0 16px; padding-top:24px; border-top:2px dashed #d8cfe8; }
+  .insight-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; text-align:left; }
+  .insight-card{ border-radius:22px; padding:18px; background:#fff; border:3px solid var(--ink); position:relative; overflow:hidden; }
+  .insight-card .emo-badge{ width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:21px; box-shadow:0 5px 10px rgba(29,20,64,.2); margin-bottom:10px; color:#fff; }
+  .insight-card .lbl{ font-family:'Jua',sans-serif; font-size:15px; margin-bottom:5px; }
+  .insight-card .txt{ font-size:13.5px; color:var(--ink-soft); line-height:1.6; }
+
+  .match-rank-line{ display:flex; align-items:center; gap:10px; margin-bottom:10px; flex-wrap:wrap; }
+  .match-rank-line .medal{ font-size:24px; }
+  .match-name{ font-family:'Jua',sans-serif; }
+  .match-group{ font-size:13.5px; color:var(--ink-soft); margin-bottom:12px; line-height:1.5; }
+
+  .match-group-row{ display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin-bottom:14px; }
+  .idol-card .match-group-row{ justify-content:center; }
+  .accent-bar{ height:5px; width:56px; border-radius:999px; margin:2px 0 14px; }
+  .idol-card .accent-bar{ margin-left:auto; margin-right:auto; }
+  .grp-name{ font-family:'Jua',sans-serif; font-size:15px; }
+  .grp-name .grp-en{ font-size:11px; color:var(--ink-soft); font-family:'Noto Sans KR',sans-serif; margin-left:5px; font-weight:500; }
+  .grp-tag{ font-size:11.5px; font-weight:700; color:#fff; padding:5px 13px; border-radius:999px; box-shadow:0 3px 8px rgba(29,20,64,.2); }
+  .match-stars{ font-size:17px; letter-spacing:1px; color:var(--gold); }
+  .match-stars .empty{ color:#e6ddf5; }
+  .match-score{ font-family:'Press Start 2P',monospace; font-size:12px; color:var(--ink); margin-left:6px; }
+  .match-heading{ font-family:'Jua',sans-serif; font-size:15px; margin:14px 0 6px; color:var(--ink); }
+  .match-desc{ font-size:14px; line-height:1.7; color:var(--ink-soft); margin-bottom:10px; }
+  .match-points{ list-style:none; padding:0; margin:0 0 12px; display:flex; flex-direction:column; gap:6px; }
+  .match-points li{ font-size:13.5px; color:var(--ink-soft); padding-left:20px; position:relative; line-height:1.55; }
+  .match-points li::before{ content:"✦"; position:absolute; left:0; top:0; color:var(--dot-color, var(--hotpink)); font-size:12px; }
+  .match-quote{ font-size:13.5px; background:#f8f2ff; border-left:4px solid var(--hotpink); border-radius:12px; padding:11px 15px; color:var(--ink); line-height:1.6; }
+
+  .top1-card{ max-width:840px; margin:0 auto 40px; background:var(--cream); padding:clamp(24px,4vw,38px); display:grid; grid-template-columns:210px 1fr; gap:28px; align-items:start; position:relative; }
+  @media (max-width:640px){ .top1-card{ grid-template-columns:1fr; text-align:center; } .match-points li{ text-align:left; } }
+  .top1-avatar{ width:100%; aspect-ratio:1/1; border-radius:50%; display:flex; align-items:center; justify-content:center; position:relative; box-shadow:0 14px 26px rgba(29,20,64,.3); }
+  .top1-avatar::after{ content:""; position:absolute; top:12%; left:20%; width:32%; height:22%; background:rgba(255,255,255,.55); border-radius:50%; filter:blur(3px); }
+  .top1-card .match-name{ font-size:28px; }
+
+  /* TOP2~5: 위계 없이 같은 크기, 2열로 줄바꿈만 */
+  .idol-grid{ max-width:820px; margin:0 auto 24px; display:grid; grid-template-columns:repeat(2,1fr); gap:22px; align-items:start; }
+  @media (max-width:560px){ .idol-grid{ grid-template-columns:1fr; } }
+  .idol-card{ background:var(--cream); padding:20px; }
+  .idol-avatar{ width:76px; height:76px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; position:relative; box-shadow:0 8px 16px rgba(29,20,64,.24); }
+  .idol-avatar::after{ content:""; position:absolute; top:12%; left:20%; width:32%; height:22%; background:rgba(255,255,255,.55); border-radius:50%; filter:blur(2px); }
+  .idol-card .match-rank-line{ justify-content:center; text-align:center; flex-direction:column; gap:2px; }
+  .idol-card .match-name{ font-size:18px; }
+  .idol-card .match-group{ text-align:center; }
+  .idol-card .match-stars-row{ display:flex; justify-content:center; align-items:center; gap:4px; margin-bottom:10px; }
+
+  .closing-actions{ max-width:560px; margin:80px auto 110px; background:var(--cream); padding:clamp(32px,5vw,46px); text-align:center; }
+  .cta-row{ display:flex; flex-wrap:wrap; gap:16px; justify-content:center; position:relative; z-index:1; }
+  .action-btn{ display:inline-flex; align-items:center; gap:10px; font-family:'Jua',sans-serif; font-size:16.5px; padding:18px 30px; border-radius:999px; border:none; cursor:pointer; transition:transform .15s ease; }
+  .action-btn:hover{ transform:translateY(-4px) scale(1.02); }
+  .action-btn:active{ transform:translateY(1px) scale(.99); }
+  .action-btn.primary{ background:linear-gradient(160deg,#ff6cc0,var(--hotpink)); color:#fff; box-shadow:0 10px 0 -2px rgba(179,0,90,.4), 0 16px 26px rgba(255,46,154,.4); }
+  .action-btn.ghost{ background:#fff; color:var(--ink); border:3px solid var(--ink); box-shadow:0 8px 0 -1px rgba(29,20,64,.18); }
+
+  .ad-slot-wrap{ max-width:900px; margin:0 auto 20px; padding:0 clamp(18px,5vw,56px); text-align:center; position:relative; z-index:2; }
+  .ad-slot-label{ font-size:10.5px; color:var(--ink-soft); margin-bottom:8px; letter-spacing:1px; }
+  .ad-slot-box{ background:#fff; border:2px solid rgba(29,20,64,.15); border-radius:16px; min-height:90px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+
+  footer{ padding:34px clamp(18px,5vw,56px) 46px; text-align:center; font-size:13px; color:var(--ink-soft); position:relative; z-index:2; line-height:1.6; }
+  footer .foot-logo{ font-family:'Jua',sans-serif; font-size:16.5px; color:var(--ink); margin-bottom:8px; }
+
+  :focus-visible{ outline:3px solid var(--ink); outline-offset:2px; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo font-display">
+    <span>덕질사주</span>
+    <span class="badge font-pixel">BETA</span>
+  </div>
+  <a href="#input" class="nav-cta font-display">최애 찾으러 가기</a>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="float-deco pxheart" style="top:14%; left:9%; animation-delay:.2s;"></div>
+  <div class="float-deco pxstar" style="top:22%; right:11%; animation-delay:1s;"></div>
+  <div class="float-deco pxcube" style="bottom:20%; left:14%; animation-delay:1.6s;"></div>
+  <div class="float-deco pxheart" style="bottom:16%; right:16%; animation-delay:.8s;"></div>
+  <div class="float-deco pxdrop" style="top:52%; left:4%; animation-delay:2s;"></div>
+  <div class="float-deco pxstar" style="top:64%; right:6%; animation-delay:.5s; transform:scale(.7);"></div>
+
+  <span class="holo-badge font-pixel"><span class="spark">✦</span> SAJU × K-POP MATCHING <span class="spark">✦</span></span>
+  <h1 class="font-display chrome-text">내 사주랑<br>찰떡 궁합 최애 찾기</h1>
+  <p class="sub">생년월일만 톡 넣으면 내 사주 기운 분석 끝!<br>지금 나랑 텐션 제일 잘 맞는 아이돌 TOP5, 바로 보여줄게 ✨</p>
+  <a href="#input" class="hero-cta">
+    <span>나랑 잘 맞는 최애 찾기</span>
+    <span>✦</span>
+  </a>
+
+  <div class="scroll-cue font-pixel">
+    <span>SCROLL</span>
+    <span class="arrow"></span>
+  </div>
+</header>
+
+<!-- ===================== INPUT ===================== -->
+<section id="input">
+  <div class="device-wrap">
+    <div class="device-copy">
+      <span class="kicker font-pixel">STEP 1</span>
+      <h2 class="font-display">내 정보 넣고 시작하기</h2>
+      <p>태어난 날짜를 넣으면 <strong>일주(日柱)</strong> — 태어난 그 날의 사주 기운을 정확하게 계산해줄게. 시간은 몰라도 괜찮아, 일주 계산엔 필요 없거든.</p>
+      <p>여기 결과는 사주 기운으로 풀어보는 <strong>재미 콘텐츠</strong>야. 너무 정색하지 말고 가볍게 즐겨줘 🩵</p>
+    </div>
+
+    <div class="console">
+      <div class="console-screen">
+        <div class="console-screen-label">
+          <span>DEOKJIL-OS</span>
+          <span>♥ READY</span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="font-pixel" for="birth-date">생년월일</label>
+            <input type="date" id="birth-date" required>
+          </div>
+          <div class="field">
+            <label class="font-pixel" for="birth-time">태어난 시간(선택)</label>
+            <select id="birth-time">
+              <option value="">모름 / 비공개</option>
+              <option value="23">자시 (23~01시)</option>
+              <option value="1">축시 (01~03시)</option>
+              <option value="3">인시 (03~05시)</option>
+              <option value="5">묘시 (05~07시)</option>
+              <option value="7">진시 (07~09시)</option>
+              <option value="9">사시 (09~11시)</option>
+              <option value="11">오시 (11~13시)</option>
+              <option value="13">미시 (13~15시)</option>
+              <option value="15">신시 (15~17시)</option>
+              <option value="17">유시 (17~19시)</option>
+              <option value="19">술시 (19~21시)</option>
+              <option value="21">해시 (21~23시)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="font-pixel" for="nickname">닉네임(선택)</label>
+          <input type="text" id="nickname" placeholder="결과 카드에 표시할 덕질명">
+        </div>
+
+        <div class="field">
+          <label class="font-pixel">궁합 찾을 대상</label>
+          <div class="segment-control" id="gender-filter">
+            <button type="button" class="segment-btn" data-value="M">남자 아이돌만</button>
+            <button type="button" class="segment-btn" data-value="F">여자 아이돌만</button>
+            <button type="button" class="segment-btn active" data-value="ALL">전체</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="console-buttons">
+        <div class="dpad" aria-hidden="true"></div>
+        <button class="submit-btn" id="submit-btn" type="button">나랑 잘 맞는 최애 찾기 ▶</button>
+      </div>
+      <p class="helper-note">분석하는 데 2초면 충분해 ⏱️</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESULT ===================== -->
+<section id="result">
+
+  <div class="section-head">
+    <span class="kicker font-pixel">STEP 2</span>
+    <h2 class="font-display" id="result-title">사주 리포트 완성!</h2>
+  </div>
+
+  <div class="profile-card bubble" id="profile-card">
+    <div class="profile-icon" id="profile-icon"></div>
+    <div class="profile-ilju" id="profile-ilju">일주 · --</div>
+    <div class="profile-body">
+      <h3 class="font-display" id="profile-title">성장하는 새싹형</h3>
+      <div id="profile-desc"></div>
+      <div class="keyword-list" id="profile-keywords"></div>
+    </div>
+
+    <div class="insight-title font-display">내 덕질 특징 5가지 📌</div>
+    <div class="insight-grid" id="insight-grid"></div>
+  </div>
+
+  <div class="section-head" style="margin-top:70px;">
+    <span class="kicker font-pixel">STEP 3</span>
+    <h2 class="font-display">나랑 찰떡 궁합인 최애 TOP5</h2>
+  </div>
+
+  <div id="top1-wrap"></div>
+  <div class="idol-grid" id="rest-wrap"></div>
+
+  <div class="closing-actions bubble">
+    <div class="cta-row">
+      <button type="button" class="action-btn primary" id="share-btn">📤 친구에게 결과 공유하기</button>
+      <button type="button" class="action-btn ghost" id="retry-btn">🔄 테스트 다시하기</button>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <div class="foot-logo font-display">덕질사주</div>
+  <p>본 콘텐츠의 사주 풀이는 일주(日柱) 기준 간이 로직 기반 엔터테인먼트 결과이며, 실제 명리학적 해석과 다를 수 있어요.</p>
+  <p>© 2026 Deokjil Saju. Made with ♥ and pixels.</p>
+</footer>
+
+<div class="ad-slot-wrap">
+  <div class="ad-slot-label font-pixel">AD</div>
+  <div class="ad-slot-box">
+    <!--
+    <ins class="adsbygoogle"
+         style="display:block; width:100%;"
+         data-ad-client="ca-pub-8276164907126629"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  const MANSE_API_CONFIG = { enabled: false, endpoint: "https://your-backend.example.com/api/manse", apiKey: "" };
+
+  async function fetchManseFromAPI(dateStr, hour){
+    if(!MANSE_API_CONFIG.enabled) return null;
+    try{
+      const url = MANSE_API_CONFIG.endpoint + "?date=" + encodeURIComponent(dateStr) + "&hour=" + encodeURIComponent(hour || "");
+      const res = await fetch(url, { headers: MANSE_API_CONFIG.apiKey ? { "Authorization": "Bearer " + MANSE_API_CONFIG.apiKey } : {} });
+      if(!res.ok) throw new Error("API 응답 오류: " + res.status);
+      const data = await res.json();
+      return { dayStem: data.dayStem || null, dayBranch: data.dayBranch || null };
+    } catch(err){
+      console.warn("만세력 API 호출 실패 → 로컬 계산으로 대체합니다.", err);
+      return null;
+    }
+  }
+
+  /* ---------------- 오행 기초 데이터 ---------------- */
+  const STEMS = ["갑","을","병","정","무","기","경","신","임","계"];
+  const BRANCHES = ["자","축","인","묘","진","사","오","미","신","유","술","해"];
+  const STEM_ELEMENT = ["목","목","화","화","토","토","금","금","수","수"];
+  const SANGSAENG = { "목":"화", "화":"토", "토":"금", "금":"수", "수":"목" };
+  const SANGGEUK  = { "목":"토", "토":"수", "수":"화", "화":"금", "금":"목" };
+
+  function mod(n, m){ return ((n % m) + m) % m; }
+  function hashSeed(str){ let h=0; for(let i=0;i<str.length;i++){ h=(h*31+str.charCodeAt(i))>>>0; } return h; }
+
+  /* ---------------- Google Analytics(GA4) 이벤트 전송 헬퍼 ----------------
+     <head>에 gtag.js 스니펫이 로드되어 있으면 window.gtag 함수가 생겨.
+     gtag이 없거나 광고 차단기 등으로 막힌 환경이어도 에러 없이 넘어가도록 감싸뒀어.
+  */
+  function trackEvent(eventName, params){
+    try{
+      if(typeof gtag === "function"){ gtag("event", eventName, params || {}); }
+    } catch(e){ /* GA 로드 실패 시 무시 */ }
+  }
+
+  /* ---------------- 일주(日柱) 정확 계산: 율리우스적일(JDN) 기반 ----------------
+     검증: 2024-01-01 = 갑자일, 2026-07-02 = 정축일 두 기준일로 교차 검증한 공식이야.
+     공식: 60갑자 인덱스 = (JDN + 49) mod 60
+  */
+  function toJDN(y, m, d){
+    const a = Math.floor((14 - m) / 12);
+    const y2 = y + 4800 - a;
+    const m2 = m + 12 * a - 3;
+    return d + Math.floor((153 * m2 + 2) / 5) + 365 * y2 + Math.floor(y2 / 4) - Math.floor(y2 / 100) + Math.floor(y2 / 400) - 32045;
+  }
+  function dayPillarIndex(y, m, d){ return mod(toJDN(y, m, d) + 49, 60); }
+  function dayStemIndexFromDate(y, m, d){ return mod(dayPillarIndex(y, m, d), 10); }
+  function dayBranchIndexFromDate(y, m, d){ return mod(dayPillarIndex(y, m, d), 12); }
+
+  function elementFromYear(year){ return STEM_ELEMENT[mod(year - 4, 10)]; } // 아이돌용 연주 계산(공개된 출생연도만 아는 경우)
+
+  /* ---------------- 결과 카드 아이콘: 픽셀 도트 대신 이모지로 ---------------- */
+  const RESULT_EMOJIS = ["🎤","💗","📸","🏆","✨"]; // 마이크·하트·포토카드·트로피·반짝임 (덕질 테마)
+  const ELEMENT_EMOJI = { "목":"🌱", "화":"🔥", "토":"⛰️", "금":"💎", "수":"💧" };
+  function emojiSpan(emoji, size){
+    return '<span style="font-size:' + size + 'px; line-height:1;">' + emoji + '</span>';
+  }
+
+  const ELEMENT_GRADIENT = {
+    "목":"linear-gradient(150deg,#d5f5a3,#5fae4c)",
+    "화":"linear-gradient(150deg,#ffb199,#ff4d4d)",
+    "토":"linear-gradient(150deg,#e6d5c3,#b98a5c)",
+    "금":"linear-gradient(150deg,#eef0fa,#9aa0c2)",
+    "수":"linear-gradient(150deg,#c9d6ff,#5a6fd6)"
+  };
+
+  const KEYWORD_COLORS = ["#ffd1ea","#c9f2ff","#dcffc2","#ffe6a8","#e3d4ff"];
+  const INSIGHT_COLORS = ["#ff2e9a","#4fb8e0","#7fce4c","#ffb400","#8f6fe0"];
+
+  /* ---------------- 결과 카드 비주얼(아이콘·배경색·포인트 컬러) 랜덤화 ----------------
+     궁합 매칭 자체는 실제 사주 오행으로 계산하지만, 화면에 보여지는 아이콘/배경색/
+     포인트 컬러는 결과와 무관하게 5개 카드가 서로 겹치지 않도록 매번 다르게(사용자
+     시드 기반으로) 섞어서 보여줘. 배경색과 포인트 컬러는 같은 순서로 섞어서 카드마다
+     "배경색–포인트 컬러"가 한 세트로 짝지어지게 했어.
+  */
+  const DECOY_BG_POOL = [
+    "linear-gradient(150deg,#ffd6e8,#ff5ca8)",
+    "linear-gradient(150deg,#c9f2ff,#3fa8e0)",
+    "linear-gradient(150deg,#d5f5a3,#5fae4c)",
+    "linear-gradient(150deg,#fff0b0,#ffb400)",
+    "linear-gradient(150deg,#e3d4ff,#8f6fe0)",
+    "linear-gradient(150deg,#ffb199,#ff4d4d)",
+    "linear-gradient(150deg,#c6f0ff,#4fb8e0)",
+    "linear-gradient(150deg,#e6d5c3,#b98a5c)"
+  ];
+  const DECOY_ACCENT_POOL = ["#ff5ca8","#3fa8e0","#5fae4c","#ffb400","#8f6fe0","#ff4d4d","#4fb8e0","#b98a5c"];
+
+  function mulberry32(seed){
+    return function(){
+      seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+      let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function seededShuffle(arr, seed){
+    const rand = mulberry32(seed);
+    const a = arr.slice();
+    for(let i = a.length - 1; i > 0; i--){
+      const j = Math.floor(rand() * (i + 1));
+      const tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  const TRAITS = {
+    "목": {
+      title:"데뷔 초보다 지금이 더 좋은, 성장형 최애에 진심인 <span class='accent'>'새싹 응원형'</span>",
+      desc:[
+        "이 사주는 어린 나무가 뻗어나가는 힘을 가진 기운이야. 뭐든 시작하면 중간에 포기하지 않고 끝까지 밀고 나가는 저력이 있고, 새로운 걸 배우고 파고들 때 오히려 에너지가 차오르는 타입이지.",
+        "그래서 덕질할 때도 최애가 조금씩 성장해가는 모습에 제일 크게 반응해. 데뷔 초보다 지금 더 잘 되는 걸 지켜보는 게 진짜 낙이고, 응원하는 마음도 은근히 오래가서 한 번 정한 최애는 웬만해선 잘 안 놓는 편이야."
+      ],
+      keywords:["성장지향","꾸준함","다정한 응원러","호기심 대장","오래가는 진심"],
+      insights:[
+        {emo:"🌱", lbl:"최애 취향", txt:"성장형 서사에 훅 감. 데뷔 초보다 지금이 더 좋아지는 케이스에 완전 진심"},
+        {emo:"💌", lbl:"팬심 표현법", txt:"댓글·스밍 인증·생일 서포트까지 꾸준하게 챙기는 편"},
+        {emo:"🌈", lbl:"최애 텐션", txt:"급발진보다 은은하게 오래가는 텐션 유지형"},
+        {emo:"🎪", lbl:"덕질 스타일", txt:"팬카페·커뮤니티 정보 공유에 진심인 성실 덕후"},
+        {emo:"⚠️", lbl:"주의포인트", txt:"정 많이 줘서 탈덕 타이밍 놓치기 쉬움 ㅋㅋ"}
+      ]
+    },
+    "화": {
+      title:"무대 위에서 제일 반짝이는 순간에 못 참는 <span class='accent'>'불꽃 텐션형'</span>",
+      desc:[
+        "이 사주는 활활 타오르는 불꽃 같은 기운이야. 좋아하는 마음을 숨기지 못하고, 감정이 생기면 바로바로 겉으로 드러나는 솔직한 타입이지.",
+        "최애가 무대에서 에너지를 터뜨리는 순간 텐션이 즉각 반응해서 스밍·투표·직관까지 몸이 먼저 움직여. 최애 소식은 실시간으로 확인해야 직성이 풀리고, 덕질할 때만큼은 누구보다 열정적인 행동파야."
+      ],
+      keywords:["즉각반응","행동파 덕질","높은 텐션","무대 취향","화끈한 몰입"],
+      insights:[
+        {emo:"🔥", lbl:"최애 취향", txt:"무대에서 에너지 터지는 순간에 바로 심장이 훅 감"},
+        {emo:"📣", lbl:"팬심 표현법", txt:"실시간 트윗·투표 총공·직관 직행 등 행동으로 티내는 편"},
+        {emo:"⚡", lbl:"최애 텐션", txt:"소식 뜨면 텐션 급상승, 반응 속도 남들보다 훨씬 빠름"},
+        {emo:"🎧", lbl:"덕질 스타일", txt:"컴백마다 최애곡 정해서 무한 반복 재생하는 스타일"},
+        {emo:"⚠️", lbl:"주의포인트", txt:"텐션 롤러코스터가 심한 편, 과몰입 주의"}
+      ]
+    },
+    "토": {
+      title:"한 번 정하면 끝까지 가는, 의리 넘치는 <span class='accent'>'든든한 뿌리형'</span>",
+      desc:[
+        "이 사주는 땅처럼 묵직하고 안정적인 기운이야. 겉으로 크게 티는 안 나도 속으로는 단단하게 중심을 잡고, 쉽게 흔들리지 않는 편이지.",
+        "그래서 한 번 정한 최애는 웬만해선 잘 안 바뀌어. 팀의 서사와 성장 스토리를 챙겨보는 걸 좋아하고, 최애가 힘들 때도 묵묵히 곁을 지키는 든든한 포지션이야. 은근한 진심이 제일 큰 무기지."
+      ],
+      keywords:["장기 최애","안정 지향","서사 덕후","은근한 진심","의리파"],
+      insights:[
+        {emo:"⛰️", lbl:"최애 취향", txt:"믿고 보는 팀, 오래 함께한 서사에 자연스레 마음 감"},
+        {emo:"🤍", lbl:"팬심 표현법", txt:"겉으론 무심한 척해도 스밍은 꾸준히, 조용한 진심파"},
+        {emo:"🕰️", lbl:"최애 텐션", txt:"느리게 달아오르지만 한 번 정하면 잘 안 식음"},
+        {emo:"📦", lbl:"덕질 스타일", txt:"굿즈·앨범 소장처럼 물성 있는 덕질을 선호"},
+        {emo:"⚠️", lbl:"주의포인트", txt:"새 최애 영입이 느려서 갈아타는 데 시간 오래 걸림"}
+      ]
+    },
+    "금": {
+      title:"육각형의 완벽한 아이돌을 좋아하는 <span class='accent'>'칼각 취향형'</span>",
+      desc:[
+        "이 사주는 잘 벼려진 칼처럼 예리하고 정제된 기운이야. 기준이 명확하고 취향이 뚜렷해서, 아무한테나 쉽게 마음을 주지 않는 편이지.",
+        "비주얼·실력·세계관까지 삼박자를 꼼꼼히 따져보고 최애를 정하고, 한 번 꽂히면 디테일까지 파고드는 분석형 덕후가 돼. 기준을 통과하는 순간부터는 진짜 찐팬 확정이야."
+      ],
+      keywords:["뚜렷한 취향","분석형 덕질","비주얼 중시","완벽주의","육각형 취향"],
+      insights:[
+        {emo:"💎", lbl:"최애 취향", txt:"비주얼·실력·콘셉트 삼박자 딱 맞아야 마음 열림"},
+        {emo:"🔍", lbl:"팬심 표현법", txt:"직캠 분석, 무대 비교 리뷰까지 꼼꼼하게 파는 타입"},
+        {emo:"⚙️", lbl:"최애 텐션", txt:"기준 통과하는 순간부터 텐션이 확 바뀜"},
+        {emo:"🎯", lbl:"덕질 스타일", txt:"퀄리티 낮은 콘텐츠는 가차없이 스킵, 취향 확고"},
+        {emo:"⚠️", lbl:"주의포인트", txt:"기준이 너무 높아서 최애 후보 탈락시키는 재미로 삶"}
+      ]
+    },
+    "수": {
+      title:"가사 한 줄에도 마음이 확 열리는 <span class='accent'>'몰입 서사형'</span>",
+      desc:[
+        "이 사주는 깊고 고요하게 흐르는 물 같은 기운이야. 겉으로 드러내기보다 속으로 오래, 깊게 생각하고 느끼는 편이지.",
+        "최애의 세계관, 가사, 인터뷰까지 곱씹어보는 몰입형 덕후가 되고, 진심이 느껴지는 순간 마음이 확 열려. 한 번 스며들면 좀처럼 안 빠져나오는 깊은 덕질을 하는 타입이야."
+      ],
+      keywords:["서사 몰입","깊은 감정선","조용한 진심","해석파 덕후","여운러"],
+      insights:[
+        {emo:"💧", lbl:"최애 취향", txt:"가사·인터뷰·다큐까지 서사 있는 콘텐츠에 훅 감"},
+        {emo:"🌙", lbl:"팬심 표현법", txt:"혼자 조용히 곱씹는 타입, SNS보단 마음속 깊이 저장"},
+        {emo:"🫧", lbl:"최애 텐션", txt:"느리게 스며들지만 한 번 스며들면 절대 안 빠져나옴"},
+        {emo:"📖", lbl:"덕질 스타일", txt:"가사 해석·세계관 정리글까지 정독하는 몰입형 덕후"},
+        {emo:"⚠️", lbl:"주의포인트", txt:"감정 이입이 심해서 최애 힘든 일 있으면 나도 같이 힘듦"}
+      ]
+    }
+  };
+
+  /* ---------------- 그룹 + 멤버 데이터 (3~5세대, 실제 공개된 출생연도 사용) ---------------- */
+  const IDOLS = [
+    { name:"방탄소년단", en:"BTS", gen:"3세대", gender:"M", tags:["글로벌","자기서사","팀워크"],
+      members:[ {name:"RM", birthYear:1994, tag:"든든한 중심축", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"진", birthYear:1992, tag:"묵묵한 성장형", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"슈가", birthYear:1993, tag:"편안한 텐션", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"제이홉", birthYear:1994, tag:"무대 장악력", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"지민", birthYear:1995, tag:"섬세한 표현", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"뷔", birthYear:1995, tag:"당찬 텐션", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"정국", birthYear:1997, tag:"감성적인 톤", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."} ]},
+    { name:"세븐틴", en:"SEVENTEEN", gen:"3세대", gender:"M", tags:["자체제작","팀워크","성장서사"],
+      members:[ {name:"에스쿱스", birthYear:1995, tag:"무대 장악력", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"정한", birthYear:1995, tag:"섬세한 표현", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"조슈아", birthYear:1995, tag:"당찬 텐션", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"준", birthYear:1996, tag:"감성적인 톤", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"호시", birthYear:1996, tag:"안정적인 매너", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"원우", birthYear:1996, tag:"짙은 존재감", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"우지", birthYear:1996, tag:"긍정적 서사", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"도겸", birthYear:1997, tag:"세련된 완성도", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"민규", birthYear:1997, tag:"꾸준한 성실형", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"디에잇", birthYear:1997, tag:"든든한 중심축", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"승관", birthYear:1998, tag:"묵묵한 성장형", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"버논", birthYear:1998, tag:"편안한 텐션", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"디노", birthYear:1999, tag:"무대 장악력", txt:"당찬 매력에 반응 속도가 빨라짐."} ]},
+    { name:"투모로우바이투게더", en:"TXT", gen:"4세대", gender:"M", tags:["청춘서사","성장물","팬덤소통"],
+      members:[ {name:"수빈", birthYear:2000, tag:"감성적인 톤", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"연준", birthYear:2000, tag:"안정적인 매너", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"범규", birthYear:2001, tag:"짙은 존재감", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"태현", birthYear:2002, tag:"긍정적 서사", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"휴닝카이", birthYear:2002, tag:"세련된 완성도", txt:"감성적인 톤에 자꾸 몰입하게 됨."} ]},
+    { name:"프로미스나인", en:"fromis_9", gen:"3세대", gender:"F", tags:["밝은에너지","자연스러운매력","응원맛집"],
+      members:[ {name:"송하영", birthYear:1997, tag:"긍정적 서사", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"박지원", birthYear:1998, tag:"세련된 완성도", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"이채영", birthYear:2000, tag:"꾸준한 성실형", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"이나경", birthYear:2000, tag:"든든한 중심축", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"백지헌", birthYear:2003, tag:"묵묵한 성장형", txt:"묵묵한 성장형이라 계속 응원하게 됨."} ]},
+    { name:"갓세븐", en:"GOT7", gen:"3세대", gender:"M", tags:["장수그룹","끈끈한케미","자유로운매력"],
+      members:[ {name:"JB", birthYear:1994, tag:"든든한 중심축", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"마크", birthYear:1993, tag:"묵묵한 성장형", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"잭슨", birthYear:1994, tag:"편안한 텐션", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"진영", birthYear:1994, tag:"무대 장악력", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"영재", birthYear:1996, tag:"섬세한 표현", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"뱀뱀", birthYear:1997, tag:"당찬 텐션", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"유겸", birthYear:1997, tag:"감성적인 톤", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."} ]},
+    { name:"오마이걸", en:"Oh My Girl", gen:"3세대", gender:"F", tags:["몽환컨셉","꾸준한성장","팬덤유대"],
+      members:[ {name:"효정", birthYear:1994, tag:"무대 장악력", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"유아", birthYear:1995, tag:"섬세한 표현", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"승희", birthYear:1994, tag:"당찬 텐션", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"미미", birthYear:1997, tag:"감성적인 톤", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"유빈", birthYear:1997, tag:"안정적인 매너", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"아린", birthYear:1999, tag:"짙은 존재감", txt:"묵묵한 성장형이라 계속 응원하게 됨."} ]},
+    { name:"크래비티", en:"CRAVITY", gen:"4세대", gender:"M", tags:["패기","팀워크","꾸준한무대"],
+      members:[ {name:"세림", birthYear:1999, tag:"감성적인 톤", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"알렌", birthYear:1999, tag:"안정적인 매너", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"정모", birthYear:2000, tag:"짙은 존재감", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"우빈", birthYear:2000, tag:"긍정적 서사", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"원진", birthYear:2001, tag:"세련된 완성도", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"민희", birthYear:2002, tag:"꾸준한 성실형", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"형준", birthYear:2002, tag:"든든한 중심축", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"태영", birthYear:2003, tag:"묵묵한 성장형", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"성민", birthYear:2003, tag:"편안한 텐션", txt:"세련된 매력에 취향이 저격당함."} ]},
+    { name:"투어스", en:"TWS", gen:"5세대", gender:"M", tags:["풋풋함","청량컨셉","성장기대감"],
+      members:[ {name:"신유", birthYear:2003, tag:"긍정적 서사", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"도훈", birthYear:2005, tag:"세련된 완성도", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"영재", birthYear:2005, tag:"꾸준한 성실형", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"한진", birthYear:2006, tag:"든든한 중심축", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"지훈", birthYear:2006, tag:"묵묵한 성장형", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"경민", birthYear:2007, tag:"편안한 텐션", txt:"긍정적인 서사에 감정 이입하게 됨."} ]},
+    { name:"에이티즈", en:"ATEEZ", gen:"4세대", gender:"M", tags:["퍼포먼스","해적서사","강한텐션"],
+      members:[ {name:"홍중", birthYear:1998, tag:"든든한 중심축", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"성화", birthYear:1998, tag:"묵묵한 성장형", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"윤호", birthYear:1999, tag:"편안한 텐션", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"예상", birthYear:1999, tag:"무대 장악력", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"산", birthYear:1999, tag:"섬세한 표현", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"민기", birthYear:1999, tag:"당찬 텐션", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"우영", birthYear:2000, tag:"감성적인 톤", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"종호", birthYear:2000, tag:"안정적인 매너", txt:"감성적인 톤에 자꾸 몰입하게 됨."} ]},
+    { name:"있지", en:"ITZY", gen:"4세대", gender:"F", tags:["당당함","걸크러시","에너지"],
+      members:[ {name:"예지", birthYear:2000, tag:"무대 장악력", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"리아", birthYear:2000, tag:"섬세한 표현", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"류진", birthYear:2001, tag:"당찬 텐션", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"채령", birthYear:2001, tag:"감성적인 톤", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"유나", birthYear:2003, tag:"안정적인 매너", txt:"당찬 매력에 반응 속도가 빨라짐."} ]},
+    { name:"스트레이 키즈", en:"Stray Kids", gen:"4세대", gender:"M", tags:["자체작곡","강한무대","높은텐션"],
+      members:[ {name:"방찬", birthYear:1997, tag:"감성적인 톤", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"리노", birthYear:1998, tag:"안정적인 매너", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"창빈", birthYear:1999, tag:"짙은 존재감", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"현진", birthYear:2000, tag:"긍정적 서사", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"한", birthYear:2000, tag:"세련된 완성도", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"필릭스", birthYear:2000, tag:"꾸준한 성실형", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"승민", birthYear:2000, tag:"든든한 중심축", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"아이엔", birthYear:2001, tag:"묵묵한 성장형", txt:"섬세한 표현에 계속 마음이 감."} ]},
+    { name:"몬스타엑스", en:"MONSTA X", gen:"3세대", gender:"M", tags:["파워퍼포먼스","강렬한무대","장수그룹"],
+      members:[ {name:"셔누", birthYear:1992, tag:"긍정적 서사", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"민혁", birthYear:1993, tag:"세련된 완성도", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"기현", birthYear:1993, tag:"꾸준한 성실형", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"형원", birthYear:1994, tag:"든든한 중심축", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"주헌", birthYear:1994, tag:"묵묵한 성장형", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"아이엠", birthYear:1996, tag:"편안한 텐션", txt:"당찬 매력에 반응 속도가 빨라짐."} ]},
+    { name:"트레저", en:"TREASURE", gen:"4세대", gender:"M", tags:["다인원파워","무대텐션","팬덤화력"],
+      members:[ {name:"현석", birthYear:1999, tag:"든든한 중심축", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"준규", birthYear:2000, tag:"묵묵한 성장형", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"도영", birthYear:2003, tag:"편안한 텐션", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"하루토", birthYear:2004, tag:"무대 장악력", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"정환", birthYear:2005, tag:"섬세한 표현", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."} ]},
+    { name:"여자아이들", en:"(G)I-DLE", gen:"3세대", gender:"F", tags:["자체프로듀싱","강렬한콘셉트","걸크러시"],
+      members:[ {name:"미연", birthYear:1997, tag:"무대 장악력", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"민니", birthYear:1997, tag:"섬세한 표현", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"소연", birthYear:1998, tag:"당찬 텐션", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"우기", birthYear:2000, tag:"감성적인 톤", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"슈화", birthYear:2000, tag:"안정적인 매너", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."} ]},
+    { name:"에버글로우", en:"EVERGLOW", gen:"4세대", gender:"F", tags:["강렬한퍼포먼스","걸크러시","높은텐션"],
+      members:[ {name:"이유", birthYear:1998, tag:"감성적인 톤", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"시현", birthYear:1999, tag:"안정적인 매너", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"온다", birthYear:2000, tag:"짙은 존재감", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"아샤", birthYear:2000, tag:"긍정적 서사", txt:"섬세한 표현에 계속 마음이 감."} ]},
+    { name:"보이넥스트도어", en:"BOYNEXTDOOR", gen:"4세대", gender:"M", tags:["일상서사","친근함","꾸준한기록"],
+      members:[ {name:"성호", birthYear:2003, tag:"긍정적 서사", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"재현", birthYear:2003, tag:"세련된 완성도", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"리우", birthYear:2003, tag:"꾸준한 성실형", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"태산", birthYear:2004, tag:"든든한 중심축", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"이한", birthYear:2004, tag:"묵묵한 성장형", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"운학", birthYear:2006, tag:"편안한 텐션", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."} ]},
+    { name:"트와이스", en:"TWICE", gen:"3세대", gender:"F", tags:["장수그룹","팬덤유대","안정감"],
+      members:[ {name:"나연", birthYear:1995, tag:"든든한 중심축", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"정연", birthYear:1996, tag:"묵묵한 성장형", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"모모", birthYear:1996, tag:"편안한 텐션", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"사나", birthYear:1996, tag:"무대 장악력", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"지효", birthYear:1997, tag:"섬세한 표현", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"미나", birthYear:1997, tag:"당찬 텐션", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"다현", birthYear:1998, tag:"감성적인 톤", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"채영", birthYear:1999, tag:"안정적인 매너", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"쯔위", birthYear:1999, tag:"짙은 존재감", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."} ]},
+    { name:"라이즈", en:"RIIZE", gen:"5세대", gender:"M", tags:["편안한매력","팀케미","안정지향"],
+      members:[ {name:"쇼타로", birthYear:2000, tag:"무대 장악력", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"은석", birthYear:2001, tag:"섬세한 표현", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"성찬", birthYear:2001, tag:"당찬 텐션", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"원빈", birthYear:2002, tag:"감성적인 톤", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"소희", birthYear:2003, tag:"안정적인 매너", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"안톤", birthYear:2004, tag:"짙은 존재감", txt:"묵묵한 성장형이라 계속 응원하게 됨."} ]},
+    { name:"위너", en:"WINNER", gen:"3세대", gender:"M", tags:["편안한케미","장수그룹","안정감"],
+      members:[ {name:"승윤", birthYear:1994, tag:"감성적인 톤", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"진우", birthYear:1991, tag:"안정적인 매너", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"승훈", birthYear:1992, tag:"짙은 존재감", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"민호", birthYear:1993, tag:"긍정적 서사", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."} ]},
+    { name:"스테이씨", en:"STAYC", gen:"4세대", gender:"F", tags:["편안한걸크러시","안정적성장","팬덤소통"],
+      members:[ {name:"수민", birthYear:2001, tag:"긍정적 서사", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"시은", birthYear:2001, tag:"세련된 완성도", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"이사", birthYear:2002, tag:"꾸준한 성실형", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"세은", birthYear:2003, tag:"든든한 중심축", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"윤", birthYear:2004, tag:"묵묵한 성장형", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"제이", birthYear:2004, tag:"편안한 텐션", txt:"긍정적인 서사에 감정 이입하게 됨."} ]},
+    { name:"엔시티 127", en:"NCT 127", gen:"3세대", gender:"M", tags:["글로벌유닛","퍼포먼스","다국적"],
+      members:[ {name:"태용", birthYear:1995, tag:"든든한 중심축", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"쟈니", birthYear:1995, tag:"묵묵한 성장형", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"유타", birthYear:1995, tag:"편안한 텐션", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"도영", birthYear:1996, tag:"무대 장악력", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"재현", birthYear:1997, tag:"섬세한 표현", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"정우", birthYear:1998, tag:"당찬 텐션", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"해찬", birthYear:2000, tag:"감성적인 톤", txt:"섬세한 표현에 계속 마음이 감."} ]},
+    { name:"엔시티 드림", en:"NCT DREAM", gen:"4세대", gender:"M", tags:["끈끈한케미","장수드림팀","안정적성장"],
+      members:[ {name:"런쥔", birthYear:2000, tag:"무대 장악력", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"제노", birthYear:2000, tag:"섬세한 표현", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"해찬", birthYear:2000, tag:"당찬 텐션", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"재민", birthYear:2000, tag:"감성적인 톤", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"천러", birthYear:2001, tag:"안정적인 매너", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"지성", birthYear:2002, tag:"짙은 존재감", txt:"안정적인 무대 매너에 믿음이 감."} ]},
+    { name:"엔시티 위시", en:"NCT WISH", gen:"5세대", gender:"M", tags:["청량함","글로벌","성장기대감"],
+      members:[ {name:"시온", birthYear:2002, tag:"감성적인 톤", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"리쿠", birthYear:2003, tag:"안정적인 매너", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"유우시", birthYear:2004, tag:"짙은 존재감", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"재희", birthYear:2005, tag:"긍정적 서사", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"료", birthYear:2007, tag:"세련된 완성도", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"사쿠야", birthYear:2007, tag:"꾸준한 성실형", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."} ]},
+    { name:"피원하모니", en:"P1Harmony", gen:"4세대", gender:"M", tags:["팀워크","조화로운무대","꾸준함"],
+      members:[ {name:"키호", birthYear:2001, tag:"든든한 중심축", txt:"팀을 이끄는 안정적인 존재감에 마음이 감."},
+                {name:"테오", birthYear:2001, tag:"긍정적 서사", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"지웅", birthYear:2001, tag:"세련된 완성도", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"인탁", birthYear:2003, tag:"무대 장악력", txt:"압도적인 존재감에 심장이 먼저 반응함."},
+                {name:"소울", birthYear:2005, tag:"섬세한 표현", txt:"섬세한 감정 표현에 계속 마음이 감."},
+                {name:"정섭", birthYear:2005, tag:"당찬 텐션", txt:"당찬 매력에 반응 속도가 빨라짐."} ]},
+    { name:"에스파", en:"aespa", gen:"4세대", gender:"F", tags:["세계관","비주얼","하이컨셉"],
+      members:[ {name:"카리나", birthYear:2000, tag:"든든한 중심축", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"지젤", birthYear:2000, tag:"묵묵한 성장형", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"윈터", birthYear:2001, tag:"편안한 텐션", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"닝닝", birthYear:2002, tag:"무대 장악력", txt:"감성적인 톤에 자꾸 몰입하게 됨."} ]},
+    { name:"르세라핌", en:"LE SSERAFIM", gen:"4세대", gender:"F", tags:["칼군무","도시적무드","완성도"],
+      members:[ {name:"사쿠라", birthYear:1998, tag:"무대 장악력", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"김채원", birthYear:2000, tag:"섬세한 표현", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"허윤진", birthYear:2002, tag:"당찬 텐션", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"카즈하", birthYear:2003, tag:"감성적인 톤", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"홍은채", birthYear:2006, tag:"안정적인 매너", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."} ]},
+    { name:"제로베이스원", en:"ZEROBASEONE", gen:"4세대", gender:"M", tags:["케미","비주얼","서바이벌서사"],
+      members:[ {name:"성한빈", birthYear:2001, tag:"감성적인 톤", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"김지웅", birthYear:1998, tag:"안정적인 매너", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"석매튜", birthYear:2002, tag:"짙은 존재감", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"김태래", birthYear:2002, tag:"긍정적 서사", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"박건욱", birthYear:2005, tag:"세련된 완성도", txt:"감성적인 톤에 자꾸 몰입하게 됨."} ]},
+    { name:"블랙핑크", en:"BLACKPINK", gen:"3세대", gender:"F", tags:["글로벌비주얼","하이퀄리티","강렬한콘셉트"],
+      members:[ {name:"지수", birthYear:1995, tag:"긍정적 서사", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"제니", birthYear:1996, tag:"세련된 완성도", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"로제", birthYear:1997, tag:"꾸준한 성실형", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"리사", birthYear:1997, tag:"든든한 중심축", txt:"긍정적인 서사에 감정 이입하게 됨."} ]},
+    { name:"마마무", en:"MAMAMOO", gen:"3세대", gender:"F", tags:["실력파","개성강한콘셉트","완성도"],
+      members:[ {name:"솔라", birthYear:1991, tag:"든든한 중심축", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"문별", birthYear:1992, tag:"묵묵한 성장형", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"휘인", birthYear:1995, tag:"편안한 텐션", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"화사", birthYear:1995, tag:"무대 장악력", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."} ]},
+    { name:"엔믹스", en:"NMIXX", gen:"4세대", gender:"F", tags:["장르융합","독창적사운드","완성도"],
+      members:[ {name:"릴리", birthYear:2002, tag:"무대 장악력", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"해원", birthYear:2003, tag:"섬세한 표현", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"설윤", birthYear:2004, tag:"당찬 텐션", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"배이", birthYear:2004, tag:"감성적인 톤", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"지우", birthYear:2005, tag:"안정적인 매너", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"규진", birthYear:2006, tag:"짙은 존재감", txt:"묵묵한 성장형이라 계속 응원하게 됨."} ]},
+    { name:"싸이커스", en:"xikers", gen:"5세대", gender:"M", tags:["정교한퍼포먼스","비주얼","완성도"],
+      members:[ {name:"민재", birthYear:2003, tag:"감성적인 톤", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"준민", birthYear:2003, tag:"안정적인 매너", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"수민", birthYear:2004, tag:"짙은 존재감", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"진식", birthYear:2004, tag:"긍정적 서사", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"현우", birthYear:2004, tag:"세련된 완성도", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"정훈", birthYear:2005, tag:"꾸준한 성실형", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"세은", birthYear:2005, tag:"든든한 중심축", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"유준", birthYear:2005, tag:"묵묵한 성장형", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"헌터", birthYear:2005, tag:"편안한 텐션", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"예찬", birthYear:2005, tag:"무대 장악력", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."} ]},
+    { name:"엔하이픈", en:"ENHYPEN", gen:"4세대", gender:"M", tags:["다크서사","감성무드","몰입형세계관"],
+      members:[ {name:"정원", birthYear:2004, tag:"긍정적 서사", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"제이", birthYear:2002, tag:"꾸준한 성실형", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"제이크", birthYear:2002, tag:"든든한 중심축", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"성훈", birthYear:2002, tag:"묵묵한 성장형", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"선우", birthYear:2003, tag:"편안한 텐션", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"니키", birthYear:2005, tag:"무대 장악력", txt:"묵묵한 성장형이라 계속 응원하게 됨."} ]},
+    { name:"아이브", en:"IVE", gen:"4세대", gender:"F", tags:["자기서사","감성가사","성장무드"],
+      members:[ {name:"안유진", birthYear:2003, tag:"든든한 중심축", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"가을", birthYear:2002, tag:"묵묵한 성장형", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"레이", birthYear:2004, tag:"편안한 텐션", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"장원영", birthYear:2004, tag:"무대 장악력", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"리즈", birthYear:2004, tag:"섬세한 표현", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"이서", birthYear:2007, tag:"당찬 텐션", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."} ]},
+    { name:"캣츠아이", en:"KATSEYE", gen:"5세대", gender:"F", tags:["글로벌서사","다양성","서바이벌스토리"],
+      members:[ {name:"소피아", birthYear:2002, tag:"무대 장악력", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"다니엘라", birthYear:2004, tag:"당찬 텐션", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"라라", birthYear:2005, tag:"감성적인 톤", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"메건", birthYear:2006, tag:"안정적인 매너", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"윤채", birthYear:2007, tag:"짙은 존재감", txt:"안정적인 무대 매너에 믿음이 감."} ]},
+    { name:"엑소", en:"EXO", gen:"3세대", gender:"M", tags:["세계관","서사형콘셉트","장수그룹"],
+      members:[ {name:"시우민", birthYear:1990, tag:"감성적인 톤", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"수호", birthYear:1991, tag:"안정적인 매너", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"레이", birthYear:1991, tag:"짙은 존재감", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"백현", birthYear:1992, tag:"긍정적 서사", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"첸", birthYear:1992, tag:"세련된 완성도", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"찬열", birthYear:1992, tag:"꾸준한 성실형", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"디오", birthYear:1993, tag:"든든한 중심축", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"카이", birthYear:1994, tag:"묵묵한 성장형", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"세훈", birthYear:1994, tag:"편안한 텐션", txt:"감성적인 톤에 자꾸 몰입하게 됨."} ]},
+    { name:"케플러", en:"Kep1er", gen:"4세대", gender:"F", tags:["서바이벌서사","성장스토리","글로벌"],
+      members:[ {name:"최유진", birthYear:1996, tag:"긍정적 서사", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"샤오팅", birthYear:1999, tag:"세련된 완성도", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"김채현", birthYear:2002, tag:"꾸준한 성실형", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"김다연", birthYear:2003, tag:"든든한 중심축", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"히카루", birthYear:2004, tag:"묵묵한 성장형", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"바히예", birthYear:2004, tag:"편안한 텐션", txt:"당찬 매력에 반응 속도가 빨라짐."} ]},
+    { name:"베이비몬스터", en:"BABYMONSTER", gen:"5세대", gender:"F", tags:["글로벌서사","강렬한개성","성장기대감"],
+      members:[ {name:"루카", birthYear:2002, tag:"든든한 중심축", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"파리타", birthYear:2005, tag:"묵묵한 성장형", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"아사", birthYear:2006, tag:"편안한 텐션", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"아현", birthYear:2007, tag:"무대 장악력", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"라미", birthYear:2007, tag:"섬세한 표현", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"로라", birthYear:2008, tag:"당찬 텐션", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"치키타", birthYear:2009, tag:"감성적인 톤", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."} ]},
+    { name:"아일릿", en:"ILLIT", gen:"5세대", gender:"F", tags:["청량서사","감성무드","신인기대감"],
+      members:[ {name:"윤아", birthYear:2004, tag:"무대 장악력", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"민주", birthYear:2004, tag:"섬세한 표현", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"모카", birthYear:2004, tag:"당찬 텐션", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"원희", birthYear:2007, tag:"감성적인 톤", txt:"묵묵한 성장형이라 계속 응원하게 됨."},
+                {name:"이로하", birthYear:2008, tag:"안정적인 매너", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."} ]},
+    { name:"소녀시대", en:"Girls' Generation", gen:"2세대", gender:"F", tags:["장수그룹","레전드팬덤","완성도"],
+      members:[ {name:"태연", birthYear:1989, tag:"감성적인 톤", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"써니", birthYear:1989, tag:"안정적인 매너", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"티파니", birthYear:1989, tag:"짙은 존재감", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"효연", birthYear:1989, tag:"긍정적 서사", txt:"섬세한 표현에 계속 마음이 감."},
+                {name:"유리", birthYear:1989, tag:"세련된 완성도", txt:"감성적인 톤에 자꾸 몰입하게 됨."},
+                {name:"수영", birthYear:1990, tag:"꾸준한 성실형", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"윤아", birthYear:1990, tag:"든든한 중심축", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"서현", birthYear:1991, tag:"묵묵한 성장형", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."} ]},
+    { name:"레드벨벳", en:"Red Velvet", gen:"3세대", gender:"F", tags:["이중매력콘셉트","서사형앨범","장수그룹"],
+      members:[ {name:"아이린", birthYear:1991, tag:"긍정적 서사", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"웬디", birthYear:1994, tag:"세련된 완성도", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"슬기", birthYear:1994, tag:"꾸준한 성실형", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"조이", birthYear:1996, tag:"든든한 중심축", txt:"긍정적인 서사에 감정 이입하게 됨."},
+                {name:"예리", birthYear:1999, tag:"묵묵한 성장형", txt:"묵묵한 성장형이라 계속 응원하게 됨."} ]},
+    { name:"리센느", en:"RESCENE", gen:"5세대", gender:"F", tags:["글로벌라인업","우아한무드","라이징"],
+      members:[ {name:"원이", birthYear:2004, tag:"든든한 중심축", txt:"짙은 존재감에 서사를 계속 곱씹게 됨."},
+                {name:"리브", birthYear:2006, tag:"묵묵한 성장형", txt:"세련된 매력에 취향이 저격당함."},
+                {name:"미나미", birthYear:2006, tag:"편안한 텐션", txt:"묵직하게 중심 잡아주는 존재감에 계속 눈이 감."},
+                {name:"메이", birthYear:2008, tag:"무대 장악력", txt:"편안한 텐션이 오래 곁에 두고 보기 좋음."},
+                {name:"제나", birthYear:2008, tag:"섬세한 표현", txt:"섬세한 표현에 계속 마음이 감."} ]},
+    { name:"코르티스", en:"CORTIS", gen:"5세대", gender:"M", tags:["셀프프로듀싱","크리에이터크루","글로벌루키"],
+      members:[ {name:"마틴", birthYear:2008, tag:"무대 장악력", txt:"꾸준히 발전하는 모습에 오래 응원하고 싶어짐."},
+                {name:"제임스", birthYear:2005, tag:"섬세한 표현", txt:"무대 위 존재감에 심장이 먼저 반응함."},
+                {name:"주훈", birthYear:2008, tag:"당찬 텐션", txt:"당찬 매력에 반응 속도가 빨라짐."},
+                {name:"성현", birthYear:2009, tag:"감성적인 톤", txt:"안정적인 무대 매너에 믿음이 감."},
+                {name:"건호", birthYear:2009, tag:"안정적인 매너", txt:"긍정적인 서사에 감정 이입하게 됨."} ]}
+  ];
+
+  /* ---------------- 사용자 사주 계산 (일주 기준) ---------------- */
+  function seasonElement(month){
+    if([3,4,5].includes(month)) return "목";
+    if([6,7,8].includes(month)) return "화";
+    if([9,10,11].includes(month)) return "금";
+    return "수";
+  }
+
+  function localAnalyze(dateStr, hour, nickname){
+    const d = new Date(dateStr + "T00:00:00");
+    const year = d.getFullYear();
+    const month = d.getMonth() + 1;
+    const day = d.getDate();
+
+    const stemIdx = dayStemIndexFromDate(year, month, day);
+    const branchIdx = dayBranchIndexFromDate(year, month, day);
+    const primaryElement = STEM_ELEMENT[stemIdx];
+    const secondaryElement = seasonElement(month);
+    // 궁합 매칭은 순수하게 생년월일(사주)만으로 결정되도록, 시드에서 시간/닉네임은 제외했어.
+    // 같은 생년월일을 넣으면 몇 번을 다시 눌러도 항상 같은 TOP5가 나와.
+    const seed = hashSeed(dateStr);
+
+    return {
+      dayStem: STEMS[stemIdx], dayBranch: BRANCHES[branchIdx],
+      primaryElement, secondaryElement, year, month, day, seed
+    };
+  }
+
+  async function buildProfile(dateStr, hour, nickname){
+    const local = localAnalyze(dateStr, hour, nickname);
+    const apiResult = await fetchManseFromAPI(dateStr, hour);
+    if(apiResult && apiResult.dayStem && STEMS.indexOf(apiResult.dayStem) > -1){
+      local.primaryElement = STEM_ELEMENT[STEMS.indexOf(apiResult.dayStem)];
+      local.dayStem = apiResult.dayStem;
+      local.dayBranch = apiResult.dayBranch || local.dayBranch;
+    }
+    return local;
+  }
+
+  function scoreEntity(elem, profile, indexSalt){
+    let score = 74;
+    if(elem === profile.primaryElement) score += 14;
+    else if(SANGSAENG[profile.primaryElement] === elem) score += 18;
+    else if(SANGSAENG[elem] === profile.primaryElement) score += 10;
+    else if(SANGGEUK[profile.primaryElement] === elem || SANGGEUK[elem] === profile.primaryElement) score -= 6;
+    if(elem === profile.secondaryElement) score += 6;
+    const variance = mod(profile.seed + indexSalt * 97, 13);
+    score += variance;
+    return Math.max(76, Math.min(99, Math.round(score)));
+  }
+
+  function relationType(userElem, elem){
+    if(elem === userElem) return "same";
+    if(SANGSAENG[userElem] === elem) return "help_me";
+    if(SANGSAENG[elem] === userElem) return "i_help";
+    if(SANGGEUK[userElem] === elem || SANGGEUK[elem] === userElem) return "sanggeuk";
+    return "neutral";
+  }
+
+  const RELATION_TEXT = {
+    same: {
+      label:"같은 기운끼리 만나 편안하게 오래가는 궁합",
+      points:["같은 기운이라 서로 텐션 포인트가 잘 통함", "취향 코드가 자연스럽게 겹침", "말 안 해도 편하게 알아주는 느낌", "케미가 자연스럽게 척척 맞는 편"],
+      quotes:["취향이 잘 맞아서 오래갈 가능성 높은 조합이야.", "결이 비슷해서 보면 볼수록 편안해지는 케미야.", "굳이 애쓰지 않아도 자연스럽게 스며드는 조합이야.", "오래 봐도 안 질리는, 물리지 않는 궁합이야.", "취향 지분을 나눠 가진 것처럼 잘 맞는 편이야."]
+    },
+    help_me: {
+      label:"내 기운을 북돋아주는 상생(相生) 궁합",
+      points:["내가 힘 빠질 때 자동으로 채워주는 기운", "보고 있으면 저절로 의욕이 생김", "지칠 때 유독 생각나는 존재가 될 조합", "시간이 갈수록 더 좋아지는 궁합"],
+      quotes:["한 번 입덕하면 계속 힘 받는 최애가 될 거야.", "지칠 때마다 은근히 힘이 되어주는 조합이야.", "보고 있으면 저절로 기운이 차오르는 케미야.", "내 텐션을 자연스럽게 끌어올려주는 최애감이야.", "힘든 날에 유독 생각나는 조합이 될 가능성 높아."]
+    },
+    i_help: {
+      label:"내가 먼저 마음을 채워주고 싶은 상생(相生) 궁합",
+      points:["내가 먼저 마음 주고 싶어지는 조합", "챙겨주고 싶은 마음이 자연스럽게 듦", "서포트할수록 애정이 깊어지는 편", "내가 지켜주고 싶어지는 최애감"],
+      quotes:["내가 먼저 마음 주고 싶어지는, 서포트 만렙 각.", "챙겨주고 싶은 마음이 자연스럽게 드는 조합이야.", "덕질할수록 내가 더 진심이 되는 케미야.", "서포트할수록 애정이 깊어지는 타입의 궁합이야.", "내가 지켜주고 싶은 최애가 될 가능성이 높아."]
+    },
+    sanggeuk: {
+      label:"묘하게 자꾸 신경 쓰이는 자극형 궁합",
+      points:["묘하게 자꾸 신경 쓰이는 밀당 궁합", "익숙하지 않아서 오히려 더 눈이 감", "처음엔 낯설어도 빠지면 오래감", "예상 밖의 포인트에서 훅 끌리는 편"],
+      quotes:["밀당 매력에 훅 빠질 수 있는 궁합이니까 조심해.", "낯설어서 오히려 계속 신경 쓰이는 조합이야.", "처음엔 안 끌려도 어느새 스며드는 타입이야.", "예상 밖의 매력에 훅 빠질 수 있는 케미야.", "익숙하지 않아서 더 눈길이 가는 조합이야."]
+    },
+    neutral: {
+      label:"새로운 매력을 발견하게 되는 궁합",
+      points:["새로운 매력을 발견하게 되는 조합", "생각보다 잘 맞아서 놀라는 케이스", "취향 스펙트럼 넓혀주는 궁합", "의외의 지점에서 마음이 가는 편"],
+      quotes:["의외로 잘 맞을 수 있는 다크호스 조합이야!", "생각지도 못한 곳에서 취향 저격당할 수 있어.", "새로운 최애 후보로 은근히 강력한 조합이야.", "취향 스펙트럼을 넓혀줄 다크호스 궁합이야.", "예상 못 한 포인트에서 마음이 갈 수 있는 조합이야."]
+    }
+  };
+
+  function starRow(score){
+    const filled = Math.max(1, Math.min(5, Math.round(score / 20)));
+    let html = "";
+    for(let i=0;i<5;i++){ html += i < filled ? "★" : '<span class="empty">★</span>'; }
+    return html;
+  }
+
+  // TOP1은 90~99점, 나머지는 80~90점 내외로 재배치 (순위별 밴드 + 멤버별 소소한 변주)
+  function finalizeScore(rank, memberSeed){
+    if(rank === 1){ return Math.min(99, 90 + mod(memberSeed, 10)); }
+    const bases = { 2:88, 3:85, 4:82, 5:80 };
+    return bases[rank] + mod(memberSeed, 3);
+  }
+
+  function renderProfile(profile, nickname){
+    const t = TRAITS[profile.primaryElement];
+
+    document.getElementById("profile-icon").style.background = ELEMENT_GRADIENT[profile.primaryElement];
+    document.getElementById("profile-icon").innerHTML = emojiSpan(ELEMENT_EMOJI[profile.primaryElement], 56);
+    document.getElementById("profile-ilju").textContent = "일주 · " + profile.dayStem + profile.dayBranch + "일";
+    document.getElementById("profile-title").innerHTML = t.title;
+
+    const descWrap = document.getElementById("profile-desc");
+    descWrap.innerHTML = "";
+    t.desc.forEach(function(p){ const el = document.createElement("p"); el.textContent = p; descWrap.appendChild(el); });
+
+    const kwWrap = document.getElementById("profile-keywords");
+    kwWrap.innerHTML = "";
+    t.keywords.forEach(function(k, i){
+      const span = document.createElement("span");
+      span.textContent = k;
+      span.style.background = KEYWORD_COLORS[i % KEYWORD_COLORS.length];
+      kwWrap.appendChild(span);
+    });
+
+    const insightWrap = document.getElementById("insight-grid");
+    insightWrap.innerHTML = "";
+    t.insights.forEach(function(item, i){
+      const color = INSIGHT_COLORS[i % INSIGHT_COLORS.length];
+      const card = document.createElement("div");
+      card.className = "insight-card";
+      card.style.borderColor = color;
+      card.innerHTML =
+        '<div style="position:absolute;top:0;left:0;right:0;height:6px;background:' + color + ';"></div>' +
+        '<div class="emo-badge" style="background:' + color + ';">' + item.emo + '</div>' +
+        '<div class="lbl font-display">' + item.lbl + '</div>' +
+        '<div class="txt">' + item.txt + '</div>';
+      insightWrap.appendChild(card);
+    });
+
+    document.getElementById("result-title").textContent = nickname ? nickname + "님 사주 리포트 완성!" : "사주 리포트 완성!";
+  }
+
+  /* ---------------- 그룹별 대표 멤버 산출 + 성별 밸런스(남3:여2) 적용 ---------------- */
+  function pickTop5Members(profile, genderFilter){
+    const candidates = [];
+    IDOLS.forEach(function(idol, gi){
+      let best = null, bestScore = -1;
+      idol.members.forEach(function(member, mi){
+        const elem = elementFromYear(member.birthYear);
+        const s = scoreEntity(elem, profile, gi * 10 + mi);
+        if(s > bestScore){ bestScore = s; best = { idol: idol, member: member, elem: elem, score: s }; }
+      });
+      best.tiebreak = mod(hashSeed(idol.name + "||" + profile.seed), 10000);
+      candidates.push(best);
+    });
+
+    function byScoreThenTiebreak(a, b){
+      if(b.score !== a.score) return b.score - a.score;
+      return a.tiebreak - b.tiebreak;
+    }
+
+    let pool = candidates;
+    if(genderFilter === "M") pool = candidates.filter(function(c){ return c.idol.gender === "M"; });
+    else if(genderFilter === "F") pool = candidates.filter(function(c){ return c.idol.gender === "F"; });
+
+    let chosen = pool.sort(byScoreThenTiebreak).slice(0,5);
+
+    chosen.forEach(function(r, i){
+      const rank = i + 1;
+      const memberSeed = hashSeed(r.member.name + r.idol.en + profile.seed);
+      r.displayScore = finalizeScore(rank, memberSeed);
+    });
+
+    return chosen.slice(0,5);
+  }
+
+  function buildMatchBody(userElem, r, profile){
+    const rt = relationType(userElem, r.elem);
+    const rel = RELATION_TEXT[rt];
+    const memberSeed = hashSeed(r.member.name + r.idol.en + profile.seed);
+    const quote = rel.quotes[memberSeed % rel.quotes.length];
+    let p1idx = memberSeed % rel.points.length;
+    let p2idx = (memberSeed + 5) % rel.points.length;
+    if(p2idx === p1idx) p2idx = (p2idx + 1) % rel.points.length;
+    let p3idx = (memberSeed + 9) % rel.points.length;
+    if(p3idx === p1idx || p3idx === p2idx) p3idx = (p3idx + 1) % rel.points.length;
+
+    const desc =
+      r.member.name + "은(는) " + r.member.birthYear + "년생 멤버야. " + rel.label + "인 데다가, " +
+      r.idol.name + "(" + r.idol.en + ") 특유의 " + r.idol.tags.slice(0,2).join("·") + " 매력까지 더해지는 조합이지. " +
+      "특히 " + r.member.tag + "로 잘 알려진 멤버라서, " + r.member.txt + " " +
+      "이런 포인트들이 겹치다 보면 자연스럽게 눈길이 갈 수밖에 없어서, 덕질 시작하면 꽤 오래갈 것 같은 조합이야.";
+    const points = [r.member.txt, rel.points[p1idx], rel.points[p2idx], rel.points[p3idx]];
+    return { desc: desc, points: points, quote: quote };
+  }
+
+  function cardInner(r, rank, b, tier, accent){
+    const medals = { 1:"🥇", 2:"🥈", 3:"🥉", 4:"4️⃣", 5:"5️⃣" };
+    const pointColors = [accent, "#ffb400", "#8f6fe0"];
+    const pointsHtml = b.points.slice(0,3).map(function(p, i){
+      return '<li style="--dot-color:' + pointColors[i % pointColors.length] + ';">' + p + '</li>';
+    }).join('');
+    let html =
+      '<div class="match-rank-line"><span class="medal">' + medals[rank] + '</span><span class="match-name font-display">' + rank + '위. ' + r.member.name + '</span></div>' +
+      '<div class="accent-bar" style="background:' + accent + ';"></div>' +
+      '<div class="match-group-row">' +
+        '<span class="grp-name" style="color:' + accent + ';">' + r.idol.name + '<span class="grp-en">' + r.idol.en + '</span></span>' +
+        '<span class="grp-tag" style="background:' + accent + ';">' + r.member.tag + '</span>' +
+      '</div>' +
+      '<div' + (tier === 'mid' ? ' class="match-stars-row"' : '') + '><span class="match-stars">' + starRow(r.displayScore) + '</span><span class="match-score font-pixel">' + r.displayScore + '점</span></div>' +
+      '<div class="match-heading font-display" style="color:' + accent + ';">✦ 잘 맞는 이유</div>' +
+      '<p class="match-desc">' + b.desc + '</p>' +
+      '<ul class="match-points">' + pointsHtml + '</ul>' +
+      '<div class="match-quote" style="border-left-color:' + accent + ';">' + b.quote + '</div>';
+    return html;
+  }
+
+  function renderTop5(profile, genderFilter){
+    const results = pickTop5Members(profile, genderFilter);
+
+    // 이모지 아이콘 5종과 배경색·포인트 컬러 풀을 결과와 무관하게 섞어서
+    // 5장의 카드에 하나씩, 겹치지 않게 배정해. 배경색과 포인트 컬러는 같은 시드로
+    // 섞기 때문에 카드마다 "배경–포인트 컬러"가 한 세트로 짝지어져.
+    const shuffledEmojis = seededShuffle(RESULT_EMOJIS, profile.seed);
+    const shuffledBgs = seededShuffle(DECOY_BG_POOL.slice(0,5), profile.seed + 777);
+    const shuffledAccents = seededShuffle(DECOY_ACCENT_POOL.slice(0,5), profile.seed + 777);
+
+    const top1 = results[0];
+    const b1 = buildMatchBody(profile.primaryElement, top1, profile);
+    document.getElementById("top1-wrap").innerHTML =
+      '<div class="top1-card bubble">' +
+        '<div class="top1-avatar" style="background:' + shuffledBgs[0] + ';">' + emojiSpan(shuffledEmojis[0], 46) + '</div>' +
+        '<div class="top1-body">' + cardInner(top1, 1, b1, 'top1', shuffledAccents[0]) + '</div>' +
+      '</div>';
+
+    const restWrap = document.getElementById("rest-wrap");
+    restWrap.innerHTML = "";
+    [results[1], results[2], results[3], results[4]].forEach(function(r, i){
+      const b = buildMatchBody(profile.primaryElement, r, profile);
+      const card = document.createElement("article");
+      card.className = "idol-card bubble";
+      card.innerHTML =
+        '<div class="idol-avatar" style="background:' + shuffledBgs[i + 1] + ';">' + emojiSpan(shuffledEmojis[i + 1], 30) + '</div>' +
+        cardInner(r, i + 2, b, 'mid', shuffledAccents[i + 1]);
+      restWrap.appendChild(card);
+    });
+  }
+
+  let selectedGenderFilter = "ALL";
+  document.querySelectorAll(".segment-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      document.querySelectorAll(".segment-btn").forEach(function(b){ b.classList.remove("active"); });
+      this.classList.add("active");
+      selectedGenderFilter = this.dataset.value;
+      trackEvent("gender_filter_select", { filter_value: selectedGenderFilter });
+    });
+  });
+
+  function setActiveGenderSegment(value){
+    selectedGenderFilter = value;
+    document.querySelectorAll(".segment-btn").forEach(function(b){
+      b.classList.toggle("active", b.dataset.value === value);
+    });
+  }
+
+  async function runAnalysis(dateStr, hour, nickname, genderFilter, opts){
+    opts = opts || {};
+    const btn = document.getElementById("submit-btn");
+    const original = btn.textContent;
+    if(!opts.silent){ btn.textContent = "분석 중... ✦"; btn.disabled = true; }
+
+    const profile = await buildProfile(dateStr, hour, nickname);
+
+    return new Promise(function(resolve){
+      setTimeout(function(){
+        renderProfile(profile, nickname);
+        renderTop5(profile, genderFilter);
+
+        const resultSection = document.getElementById("result");
+        resultSection.classList.add("show");
+        resultSection.scrollIntoView({ behavior: opts.silent ? "auto" : "smooth", block:"start" });
+        btn.textContent = original;
+        btn.disabled = false;
+
+        trackEvent("saju_analysis_complete", {
+          primary_element: profile.primaryElement,
+          gender_filter: genderFilter,
+          via_shared_link: !!opts.silent
+        });
+        resolve(profile);
+      }, opts.silent ? 0 : 500);
+    });
+  }
+
+  document.getElementById("submit-btn").addEventListener("click", function(){
+    const dateInput = document.getElementById("birth-date");
+    if(!dateInput.value){ dateInput.focus(); dateInput.style.borderColor = "#ff6b9d"; return; }
+    const hour = document.getElementById("birth-time").value;
+    const nickname = document.getElementById("nickname").value.trim();
+    runAnalysis(dateInput.value, hour, nickname, selectedGenderFilter);
+  });
+
+  // 공유 링크(?d=...)로 들어온 경우, 자동으로 그 결과를 바로 보여줘.
+  (function loadFromSharedLink(){
+    const params = new URLSearchParams(location.search);
+    const sharedDate = params.get("d");
+    if(!sharedDate) return;
+    const sharedHour = params.get("h") || "";
+    const sharedNickname = params.get("n") || "";
+    const sharedFilter = params.get("f") || "ALL";
+
+    document.getElementById("birth-date").value = sharedDate;
+    document.getElementById("birth-time").value = sharedHour;
+    document.getElementById("nickname").value = sharedNickname;
+    setActiveGenderSegment(sharedFilter);
+
+    runAnalysis(sharedDate, sharedHour, sharedNickname, sharedFilter, { silent:true });
+  })();
+
+  document.getElementById("retry-btn").addEventListener("click", function(){
+    document.getElementById("result").classList.remove("show");
+    document.getElementById("birth-date").value = "";
+    document.getElementById("birth-time").value = "";
+    document.getElementById("nickname").value = "";
+    setActiveGenderSegment("ALL");
+    if(location.search){
+      history.replaceState(null, "", location.pathname);
+    }
+    document.getElementById("input").scrollIntoView({ behavior:"smooth", block:"start" });
+    trackEvent("retry_test_click", {});
+  });
+
+  /* ---------------- 공유하기 (레이어별 폴백으로 안정성 확보) ---------------- */
+  function legacyCopy(str){
+    try{
+      const ta = document.createElement("textarea");
+      ta.value = str;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      const ok = document.execCommand("copy");
+      document.body.removeChild(ta);
+      return ok;
+    } catch(e){ return false; }
+  }
+
+  function buildShareUrl(){
+    const dateVal = document.getElementById("birth-date").value;
+    const hourVal = document.getElementById("birth-time").value;
+    const nicknameVal = document.getElementById("nickname").value.trim();
+    if(!dateVal) return location.href; // 아직 분석 전이면 그냥 사이트 링크
+
+    const params = new URLSearchParams();
+    params.set("d", dateVal);
+    if(hourVal) params.set("h", hourVal);
+    if(nicknameVal) params.set("n", nicknameVal);
+    if(selectedGenderFilter && selectedGenderFilter !== "ALL") params.set("f", selectedGenderFilter);
+
+    return location.origin + location.pathname + "?" + params.toString();
+  }
+
+  document.getElementById("share-btn").addEventListener("click", async function(){
+    trackEvent("share_result_click", {});
+    const shareUrl = buildShareUrl();
+    const shareText = "내 사주랑 찰떡 궁합인 최애를 찾아봤어! 너도 한번 눌러봐 ✦";
+
+    try{
+      if(navigator.share){
+        try{
+          // 카톡/문자 등으로 보낼 때는 문구 + 링크가 각자 필드로 들어가서 자연스럽게 보여.
+          await navigator.share({ title: "덕질사주 결과", text: shareText, url: shareUrl });
+          return;
+        } catch(err){
+          console.warn("[공유하기] navigator.share 실패:", err);
+          if(err && err.name === "AbortError") return; // 사용자가 공유창을 직접 닫은 경우
+        }
+      }
+
+      // 클립보드 복사는 붙여넣었을 때 어색하지 않도록 링크만 복사해.
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        try{
+          await navigator.clipboard.writeText(shareUrl);
+          alert("결과 링크가 복사됐어! 친구한테 붙여넣기 해봐 📋");
+          return;
+        } catch(err){ console.warn("[공유하기] clipboard.writeText 실패:", err); }
+      }
+
+      if(legacyCopy(shareUrl)){
+        alert("결과 링크가 복사됐어! 친구한테 붙여넣기 해봐 📋");
+        return;
+      }
+
+      window.prompt("아래 링크를 복사해서 친구에게 보내줘 👇", shareUrl);
+    } catch(err){
+      console.error("[공유하기] 예상치 못한 오류:", err);
+      window.prompt("아래 링크를 복사해서 친구에게 보내줘 👇", shareUrl);
+    }
+  });
+
+})();
+</script>
+
+</body>
+</html>
